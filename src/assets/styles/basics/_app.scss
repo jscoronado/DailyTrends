@@ -1,0 +1,89 @@
+/*----------------- # APP -----------------*/
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, rgba(32, 32, 32, 1) 0%, rgba(32, 32, 32, 1) 100%);
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  position:relative;
+  margin: 0;
+  padding: 0;
+
+  .wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 767px;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .view-app {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .overlay-app{
+    background: rgba(32, 32, 32, 1);
+    animation: 2s ease-in-out 0s 1 animationOverlayApp forwards;
+    animation-delay: 0.5s;
+  }
+
+  .v-wrapper {
+    max-width: 767px;
+  }
+
+  .focus-element {
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+
+    &:focus {
+      box-shadow: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+  }
+
+  .line-bottom {
+    position: relative;
+    margin-bottom: 50px;
+
+    &:after{
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      height: 7.5px;
+      width: 68px;
+    }
+  }
+
+  @keyframes animationOverlayApp {
+    0% {
+      backdrop-filter: blur(0px);
+      background: rgba(32, 32, 32, 1);
+    }
+    80% {
+      backdrop-filter: blur(1px);
+      background: rgba(32, 32, 32, .4);
+    }
+    100% {
+      backdrop-filter: blur(4px);
+      background: rgba(32, 32, 32, .5);
+    }
+  }
+}
