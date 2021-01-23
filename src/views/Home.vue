@@ -1,7 +1,7 @@
 <template>
   <div id="home" class="page-app page-home">
     <div class="container">
-      <h1>DailyTrends</h1>
+      <h1>DailyTrendssdsd</h1>
     </div>
   </div>
 </template>

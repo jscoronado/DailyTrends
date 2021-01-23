@@ -1,21 +1,22 @@
 <template>
   <div id="app">
-    <Home msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <router-view />
   </div>
 </template>
 
 <script>
-import Home from './views/Home.vue'
+import Header from "./components/Header";
 
 export default {
   name: 'App',
   components: {
-    Home
+    Header,
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,4 +25,6 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+@import "./assets/styles/main.scss";
 </style>
