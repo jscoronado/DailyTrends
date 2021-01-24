@@ -7,9 +7,9 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>Título</th>
-                    <th>Periódico</th>
-                    <th>Acciones</th>
+                    <th scope="col">Título</th>
+                    <th scope="col">Periódico</th>
+                    <th scope="col">Acciones</th>
                 </tr>
                 </thead>
                 <tbody>
