@@ -3,22 +3,31 @@
 --------------------------------------------------------------*/
 article.item-article {
   position: relative;
+  margin-bottom: 60px;
 
   .content-article {
+    width: 100%;
     padding: 30px 20px;
-    background: #f9f9f9;
+    background: transparent;
     text-align: left;
 
-    img.image-article {
+    .image-article {
       width: 100%;
+      max-height: 170px;
       margin-bottom: 30px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
     }
 
     h3.title-article {
       font-size: 20px;
+      margin-bottom: 15px;
 
       a {
-        color: #00CF9A;
+        color: #444444;
         text-decoration: none;
         transition: all 0.2s ease-in-out;
 
