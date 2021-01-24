@@ -1,0 +1,54 @@
+/*--------------------------------------------------------------
+# Item Article
+--------------------------------------------------------------*/
+article.item-article {
+  position: relative;
+
+  .content-article {
+    padding: 30px 20px;
+    background: #f9f9f9;
+    text-align: left;
+
+    img.image-article {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    h3.title-article {
+      font-size: 20px;
+
+      a {
+        color: #00CF9A;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: #278884;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+
+    .desc-article {
+      font-size: 13px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    span.publisher-article {
+      position: absolute;
+      background: #ffc107;
+      color: #fff;
+      width: 100px;
+      text-align: center;
+      top: 50px;
+      left: 0;
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -3,7 +3,7 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="/"><span>DailyTrends</span></a></h1>
+        <a href="/"><span>DailyTrends</span></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
