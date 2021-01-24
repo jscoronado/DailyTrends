@@ -10,10 +10,16 @@
         <ul>
           <li class="active"><a href="/">Inicio</a></li>
           <li><a href="/ultimas-noticias">Últimas Noticias</a></li>
-          <li><a href="#periodicos">Periódicos</a></li>
+          <li><a href="/noticias">Nuestras Noticias</a></li>
           <li><a href="#">COVID</a></li>
           <li><a href="#">Contacto</a></li>
-          <li><a href="/admin"></a></li>
+
+          <li class="drop-down"><a href="/listado-noticias"><i class="fas fa-user-circle"></i></a>
+            <ul>
+              <li><a href="/listado-noticias">Listado Noticias</a></li>
+              <li><a href="/noticia/add">Añadir Noticia</a></li>
+            </ul>
+          </li>
         </ul>
       </nav><!-- .nav-menu -->
 
