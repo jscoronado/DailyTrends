@@ -6,29 +6,17 @@
     />
     <div class="container-news">
       <div class="container">
-        <h4>News</h4>
-        <div class="row list-news">
-          <ItemArticle
-            title="Artículo 1"
-            body="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-            image="https://comercializadora.electricadecadiz.es/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png"
-            source="https://www.google.es"
-            publisher="El País"
-          />
-          <ItemArticle
-                  title="Artículo 2"
-                  body="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                  image="https://comercializadora.electricadecadiz.es/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png"
-                  source="https://www.google.es"
-                  publisher="El Mundo"
-          />
-          <ItemArticle
-                  title="Artículo 3"
-                  body="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                  image="https://comercializadora.electricadecadiz.es/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png"
-                  source="https://www.google.es"
-                  publisher="Diario .es"
-          />
+        <div class="row list-news" >
+            <ItemArticle
+                    v-for="(article,index) in newsElPais" :key="article.id"
+                    :title="article.title"
+                    :body="article.body"
+                    :image="article.img"
+                    :source="article.source"
+                    :publisher="article.publisher"
+                    imagenotfound="https://grupoesneca.com/wp-content/uploads/2018/02/logo-vector-el-pais-e1561531331339.jpg"
+                    :if="index <= 5"
+            />
         </div>
       </div>
     </div>
@@ -38,16 +26,30 @@
 <script>
 import HeaderTitle from "../components/HeaderTitle";
 import ItemArticle from "../components/ItemArticle";
+import newsElPais from "../services/news_ElPais.json";
+//import scrap from "../services/index"
 
 export default {
   name: 'LastNews',
   props: {
-    msg: String
+    msg: String,
   },
   components: {
     HeaderTitle,
     ItemArticle
   },
+
+  data () {
+    return {
+      newsElPais: newsElPais
+    }
+  },
+
+  computed: {
+    newsLimited() {
+      return this.users.slice(0, 3)
+    }
+  }
 }
 </script>
 
