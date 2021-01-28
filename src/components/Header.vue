@@ -1,5 +1,6 @@
 <template>
   <header id="header" class="fixed-top d-flex align-items-center header-opacity">
+    <button type="button" class="mobile-nav-toggle d-lg-none"><i class="fas fa-bars"></i></button>
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
