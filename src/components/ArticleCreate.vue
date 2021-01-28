@@ -61,7 +61,7 @@
             onFormSubmit(event) {
                 event.preventDefault()
                 db.collection('news').add(this.article).then(() => {
-                    alert("User successfully created!");
+                    alert("¡Noticia creada!");
                     this.article.title = ''
                     this.article.body = ''
                     this.article.source = ''

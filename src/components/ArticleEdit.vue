@@ -63,7 +63,7 @@
                 event.preventDefault()
                 db.collection('news').doc(this.$route.params.id)
                     .update(this.article).then(() => {
-                    console.log("¡Noticia actualizada!");
+                    alert("¡Noticia actualizada!");
                     this.$router.push('/listado-noticias')
                 }).catch((error) => {
                     console.log(error);

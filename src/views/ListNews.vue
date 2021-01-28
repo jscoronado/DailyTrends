@@ -19,7 +19,7 @@
                     <td>
                         <router-link :to="{name: 'edit', params: { id: article.key }}" class="btn btn-app btn-edit"><i class="fas fa-edit"></i>
                         </router-link>
-                        <button @click.prevent="deleteUser(article.key)" class="btn btn-app btn-delete"><i class="far fa-trash-alt"></i></button>
+                        <button @click.prevent="deleteArticle(article.key)" class="btn btn-app btn-delete"><i class="far fa-trash-alt"></i></button>
                     </td>
                 </tr>
                 </tbody>
@@ -59,10 +59,10 @@
             })
         },
         methods: {
-            deleteUser(id){
+            deleteArticle(id){
                 if (window.confirm("¿Deseas eliminar esta noticia?")) {
                     db.collection("news").doc(id).delete().then(() => {
-                        console.log("Document deleted!");
+                        alert("¡Noticia eliminada!");
                     })
                         .catch((error) => {
                             console.error(error);
