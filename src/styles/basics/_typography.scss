@@ -24,6 +24,15 @@ body {
       line-height: 56px;
       letter-spacing: 6px;
       text-transform: uppercase;
+
+      @media (max-width: 600px) {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
     }
 
     h2 {

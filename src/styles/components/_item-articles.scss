@@ -22,6 +22,10 @@ article.item-article {
       }
     }
 
+    .info-article {
+      position: relative;
+    }
+
     h3.title-article {
       font-size: 20px;
       margin-bottom: 15px;
@@ -51,12 +55,13 @@ article.item-article {
       position: absolute;
       background: #ffc107;
       color: #fff;
-      width: 100px;
+      width: auto;
       text-align: center;
-      top: 50px;
-      left: 0;
-      font-size: 15px;
+      top: -40px;
+      left: -15px;
+      font-size: 12px;
       font-weight: 700;
+      padding: 0 10px;
       text-transform: uppercase;
     }
   }

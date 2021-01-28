@@ -107,7 +107,7 @@
       }
     }
   }
-  .active {
+  /*.active {
     >a {
       &:before {
         visibility: visible;
@@ -116,7 +116,7 @@
       color: #fff;
       text-decoration: none;
     }
-  }
+  }*/
   .drop-down {
     ul {
       display: block;
@@ -193,9 +193,7 @@
   line-height: 1;
   cursor: pointer;
   text-align: right;
-  i {
-    color: #fff;
-  }
+  color: #fff;
 }
 .mobile-nav {
   position: fixed;
