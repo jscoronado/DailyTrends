@@ -1,6 +1,6 @@
 # dailytrends-app
 
-## Project setup
+### Project setup
 ```
 npm install
 ```
